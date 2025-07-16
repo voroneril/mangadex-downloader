@@ -440,13 +440,13 @@ class requestsMangaDexSession(ModifiedSession):
         log.info("Logged out from MangaDex")
 
     def _report(self, data):
-        pbm.logger.debug("Reporting %s to MangaDex network" % data)
-        r = self.post("https://api.mangadex.network/report", json=data)
+        #pbm.logger.debug("Reporting %s to MangaDex network" % data)
+        #r = self.post("https://api.mangadex.network/report", json=data)
 
-        if r.status_code != 200:
-            pbm.logger.debug("Failed to report %s to MangaDex network" % data)
-        else:
-            pbm.logger.debug("Successfully send report %s to MangaDex network" % data)
+        #if r.status_code != 200:
+        #    pbm.logger.debug("Failed to report %s to MangaDex network" % data)
+        #else:
+        #    pbm.logger.debug("Successfully send report %s to MangaDex network" % data)
 
     def report(self, data):
         """Report to MangaDex network"""
